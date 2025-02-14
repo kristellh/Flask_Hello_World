@@ -10,7 +10,8 @@ app = Flask(__name__)
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2><p>Pour accéder à vos exerices cliquez <a href='./exercices/'>Ici</a></p>
             <p>Pour accéder à la page contact <a href='./contact/'>Ici</a></p>
-            <p>Pour accéder à la page cnam <a href='./cnam/'>Ici</a></p>"""
+            <p>Pour accéder à la page cnam <a href='./cnam/'>Ici</a></p>
+            <p>Pour accéder à la page cv <a href='./cv/'>Ici</a></p>"""
   
 @app.route('/exercices/')
 def exercices():
@@ -21,7 +22,7 @@ def MaPremierepage():
     return render_template("cnam.html")
   
   @app.route("/contact/")
-def MaPremiereAPI():
+  def MaPremiereAPI():
     return render_template("contact.html")
   
 @app.route("/cv/")
