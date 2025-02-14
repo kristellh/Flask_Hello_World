@@ -20,7 +20,7 @@ def MaPremiereAPI():
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
-  printf(input int("Entrer une valeur",val_user))
+  val_user=input("Entrer votre valeur")
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
                                                                                                                
 if __name__ == "__main__":
