@@ -15,9 +15,11 @@ def hello_world():
 @app.route('/exercices/')
 def exercices():
     return render_template('exercices.html')
+  
 @app.route("/cnam/")
 def MaPremierepage():
     return render_template("cnam.html")
+  
 @app.route("/contact/")
 def MaPremiereAPI():
     return render_template("contact.html")
@@ -34,11 +36,12 @@ def somme(valeur1, valeur2):
     sommeres = valeur1 + valeur2
     pair = "impair"
     if sommeres % 2 == 0:
-        pair = "pair"
-        
+        pair = "pair"       
     return "<h2>La somme de vos valeurs est : </h2>" + str(valeur1 + valeur2)
 
-
-                                                                                                          
+@app.route('/sommeliste/<path:liste>')
+def sommeliste(liste):
+    L=[int(i) for i in input("Entrer x nombres séparé d'un espace\n").split()]
+    return "<h2>La somme de vos valeurs est : </h2>"
 if __name__ == "__main__":
   app.run(debug=True)
