@@ -42,6 +42,9 @@ def somme(valeur1, valeur2):
 @app.route('/sommeliste/<path:liste>')
 def sommeliste(liste):
     L=[int(i) for i in input("Entrer x nombres séparé d'un espace\n").split()]
-    return "<h2>La somme de vos valeurs est : </h2>"
+    somme_nbliste=int(sum(L))
+    return "<h2>La somme de vos valeurs est : </h2>" + str(somme_nbliste)
+
+
 if __name__ == "__main__":
   app.run(debug=True)
