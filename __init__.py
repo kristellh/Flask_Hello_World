@@ -21,12 +21,12 @@ def exercices():
 def MaPremierepage():
     return render_template("cnam.html")
   
-  @app.route("/contact/")
-  def MaPremiereAPI():
+@app.route("/contact/")
+def MaPremiereAPI():
     return render_template("contact.html")
   
-  @app.route("/cv/")
-  def MonCv():
+@app.route("/cv/")
+def MonCv():
     return render_template("cv.html")
 
 @app.route('/calcul_carre/<int:val_user>')
