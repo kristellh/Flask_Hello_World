@@ -19,6 +19,7 @@ def exercices():
 @app.route("/cnam/")
 def MaPremierepage():
     return render_template("cnam.html")
+  
   @app.route("/contact/")
 def MaPremiereAPI():
     return render_template("contact.html")
