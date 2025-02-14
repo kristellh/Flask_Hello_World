@@ -19,8 +19,8 @@ def MaPremiereAPI():
     return render_template("contact.html")
 
 @app.route('/calcul_carre/<int:val_user>')
+val_user =int(input('Entrer un chiffre :\n'))
 def carre(val_user):
-  val_user =int(input('Entrer un chiffre :\n'))
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
                                                                                                                
 if __name__ == "__main__":
