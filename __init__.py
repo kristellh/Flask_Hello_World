@@ -43,8 +43,8 @@ def somme(valeur1, valeur2):
 def sommeliste(liste):
     L=[int(i) for i in input("Entrer x nombres séparé d'un espace\n").split()]
     somme_nbliste=int(sum(L))
-    return "<h2>La somme de vos valeurs est : </h2>" + str(somme_nbliste)
-
-
+    maxnb=int(max(L))
+    return "<h2>La somme de vos valeurs est : </h2>" + str(somme_nbliste)+ "\n" + "<h2>La valeur la plus grande saisie est : </h2>" + str(maxnb)
+    
 if __name__ == "__main__":
   app.run(debug=True)
