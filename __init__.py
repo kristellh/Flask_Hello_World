@@ -21,6 +21,7 @@ def MaPremiereAPI():
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
+    val_user=int(imput("Entrer un nombre\n"))
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
 
 @app.route('/somme/<int:valeur1>/<int:valeur2>')
