@@ -24,6 +24,7 @@ def carre(val_user):
 
 @app.route('/somme/<int:valeur1>/<int:valeur2>')
 def somme(valeur1,valeur2):
+  resultat = valeur1 + valeur2
     return "<h2>La somme de vos valeurs est : </h2>" + str(valeur1 + valeur2)
                                                                                                                
 if __name__ == "__main__":
