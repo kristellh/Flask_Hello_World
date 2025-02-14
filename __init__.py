@@ -34,10 +34,7 @@ def somme(valeur1, valeur2):
         pair = "pair"
         
     return "<h2>La somme de vos valeurs est : </h2>" + str(valeur1 + valeur2)
-  
-@app.route('/sommeliste/<list:L>')
-def liste():
-L[]
+
 
                                                                                                           
 if __name__ == "__main__":
