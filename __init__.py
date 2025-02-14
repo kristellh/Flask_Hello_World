@@ -29,10 +29,6 @@ def somme(valeur1, valeur2):
     valeur1=int(imput("Entrer un nombre\n"))
     valeur2=int(imput("Entrer un nombre\n"))
     sommeres = valeur1 + valeur2
-      if sommeres % 2 == 0:
-        printf("pair")
-      else:
-              printf("impair")
         
     return "<h2>La somme de vos valeurs est : </h2>" + str(valeur1 + valeur2)
                                                                                                                
