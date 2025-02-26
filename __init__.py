@@ -40,7 +40,7 @@ def formulaire():
 
 @app.route('/TP1/')
 def tp1():
-    return render_template('tp1.html')
+    return render_template('TP1.html')
 
 
 @app.route("/cnam/")
