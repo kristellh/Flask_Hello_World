@@ -14,7 +14,8 @@ def hello_world():
             <p>Pour accéder à la page cv <a href='./cv/'>Ici</a></p>
             <p>Pour accéder à la page exercice liste <a href='./exercice_base1/'>Ici</a></p>
             <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
-            <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>"""
+            <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>
+            <p>Pour accéder à la page formulaire <a href='./formulaire/'>ici</a></p>"""
   
 @app.route('/exercices/')
 def exercices():
@@ -31,7 +32,12 @@ def exercices2():
 @app.route('/exercice_base3/')
 def exercices3():
     return render_template('exercices_base3.html')
-  
+
+@app.route('/formulaire/')
+def formulaire():
+    return render_template('formulaire.html')
+
+
 @app.route("/cnam/")
 def MaPremierepage():
     return render_template("cnam.html")
