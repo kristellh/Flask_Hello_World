@@ -19,9 +19,9 @@ def hello_world():
 def exercices():
     return render_template('exercices.html')
 
-@app.route('/exercice_base1/')
+@app.route('/eexercicesliste/')
 def exercicesliste():
-    return render_template('exercice_base1')
+    return render_template('exercice_base1.html')
 
 @app.route('/exercice_base2/')
 def exercices2():
