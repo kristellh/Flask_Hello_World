@@ -13,19 +13,24 @@ def hello_world():
             <p>Pour accéder à la page cnam <a href='./cnam/'>Ici</a></p>
             <p>Pour accéder à la page cv <a href='./cv/'>Ici</a></p>
             <p>Pour accéder à la page exercice liste <a href='./exercice_base1/'>Ici</a></p>
-            <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>"""
+            <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
+            <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>Ici</a></p>"""
   
 @app.route('/exercices/')
 def exercices():
     return render_template('exercices.html')
 
-@app.route('/eexercicesliste/')
-def exercicesliste():
+@app.route('/exercice_base1/')
+def exercices1():
     return render_template('exercice_base1.html')
 
 @app.route('/exercice_base2/')
 def exercices2():
     return render_template('Exercices_HTML.html')
+  
+  @app.route('/exercice_base3/')
+def exercices3():
+    return render_template('exercices_base3.html')
   
 @app.route("/cnam/")
 def MaPremierepage():
