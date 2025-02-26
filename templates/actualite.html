@@ -28,14 +28,14 @@ table {
 
 <tr>
 <td>un tableau</td>
-<td>           </td>	
-<td>           </td>
+<td colspan="2"></td>	
+<td colspan="2"> </td>
 	
 </tr>
 <tr>	
-<td>   </td>
-<td>à 5</td>
-<td> cases</td>
+<td colspan="2"></td>
+<td colspan="2">à 5</td>
+<td colspan="2"> cases</td>
 </tr>
 
 </table>
@@ -46,26 +46,33 @@ table {
 	</br>
 		<table>
 
-<tr>
-<td>un autre tableau</td>
-<td>       </td>	
-<td>       </td>
-<td>       </td>
-	
-</tr>
-	<tr>		
-<td rowspan="3">   </td>	
-<td></td>
-<td rowspan="3">   </td>	
-<td rowspan="3">        </td>			
-</tr>
-<tr>		
-<td rowspan="3">   </td>	
-<td></td>
-<td rowspan="3">   </td>	
-<td rowspan="3">        </td>			
-</tr>
-</table>
+ <table>
+        <tr>
+            <td>un autre tableau</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td rowspan="2">
+                <table width="100%">
+                    <tr><td style="width: 100%;"></td></tr>
+                    <tr><td style="width: 100%;"></td></tr>
+                    <tr><td style="width: 100%;"></td></tr>
+                </table>
+            </td>
+            <td rowspan="2"></td>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="width:  100%;"></td>
+                        <td style="width:  100%;"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 
 
