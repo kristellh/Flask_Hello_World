@@ -12,7 +12,7 @@ def hello_world():
             <p>Pour accéder à la page contact <a href='./contact/'>Ici</a></p>
             <p>Pour accéder à la page cnam <a href='./cnam/'>Ici</a></p>
             <p>Pour accéder à la page cv <a href='./cv/'>Ici</a></p>
-            <p>Pour accéder à la page exercice liste <a href='./Liste_Base/'>Ici</a></p>
+            <p>Pour accéder à la page exercice liste <a href='./exercice_base1/'>Ici</a></p>
             <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>"""
   
 @app.route('/exercices/')
@@ -21,7 +21,7 @@ def exercices():
 
 @app.route('/exercice_base1/')
 def exercicesliste():
-    return render_template('1_Liste_Base.html')
+    return render_template('exercice_base1')
 
 @app.route('/exercice_base2/')
 def exercices2():
