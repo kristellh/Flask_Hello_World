@@ -24,7 +24,7 @@ def exercicesliste():
     return render_template('1_Liste_Base.html')
 
 @app.route('/exercice_base2/')
-def exercicesliste():
+def exercices2():
     return render_template('Exercices_HTML.html')
   
 @app.route("/cnam/")
