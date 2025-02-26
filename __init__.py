@@ -30,7 +30,7 @@ def exercices2():
   
 @app.route('/exercice_base3/')
 def exercices3():
-    return render_template('exercice_base3.html')
+    return render_template('exercices_base3.html')
   
 @app.route("/cnam/")
 def MaPremierepage():
