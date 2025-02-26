@@ -22,6 +22,10 @@ def hello_world():
 def exercices():
     return render_template('exercices.html')
 
+@app.route('/actualite/')
+def actualite():
+    return render_template('actualite.html')
+  
 @app.route('/exercice_base1/')
 def exercices1():
     return render_template('exercice_base1.html')
