@@ -25,6 +25,10 @@ def exercices():
 @app.route('/actualite/')
 def actualite():
     return render_template('actualite.html')
+
+@app.route('/act/')
+def act():
+    return render_template('act.html')
   
 @app.route('/exercice_base1/')
 def exercices1():
