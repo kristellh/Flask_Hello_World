@@ -20,13 +20,17 @@ def hello_world():
 def exercices():
     return render_template('exercices.html')
 
-
+@app.route('/exercice_base1/')
+def exercices1():
+    return render_template('exercice_base1.html')
 
 @app.route('/exercice_base2/')
 def exercices2():
     return render_template('Exercices_HTML.html')
   
-
+@app.route('/exercice_base3/')
+def exercices3():
+    return render_template('exercice_base3.html')
   
 @app.route("/cnam/")
 def MaPremierepage():
