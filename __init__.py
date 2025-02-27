@@ -9,9 +9,6 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2><p>Pour accéder à vos exerices cliquez <a href='./exercices/'>Ici</a></p>
-            <p>Pour accéder à la page contact <a href='./contact/'>Ici</a></p>
-            <p>Pour accéder à la page cnam <a href='./cnam/'>Ici</a></p>
-            <p>Pour accéder à la page cv <a href='./cv/'>Ici</a></p>
             <p>Pour accéder à la page exercice liste <a href='./exercice_base1/'>Ici</a></p>
             <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
             <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>
@@ -64,19 +61,6 @@ def formulaire():
 @app.route('/TP1/')
 def tp1():
     return render_template('TP1.html')
-
-
-@app.route("/cnam/")
-def MaPremierepage():
-    return render_template("cnam.html")
-  
-@app.route("/contact/")
-def MaPremiereAPI():
-    return render_template("contact.html")
-  
-@app.route("/cv/")
-def MonCv():
-    return render_template("cv.html")
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
