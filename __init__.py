@@ -16,7 +16,8 @@ def hello_world():
             <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
             <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>
             <p>Pour accéder à la page formulaire <a href='./formulaire/'>ici</a></p>
-            <p>Pour accéder à la page TP1 <a href='./TP1/'>ici</a></p>"""
+            <p>Pour accéder à la page TP1 <a href='./TP1/'>ici</a></p>
+           <p>Pour accéder à la page maison <a href='./maison/'>ici</a></p> """
   
 @app.route('/exercices/')
 def exercices():
@@ -25,6 +26,10 @@ def exercices():
 @app.route('/actualite/')
 def actualite():
     return render_template('actualite.html')
+
+@app.route('/maison/')
+def maison():
+    return render_template('Exemple_Base_SVG.html.')
 
 @app.route('/act/')
 def act():
