@@ -23,7 +23,7 @@ def exercices():
     return render_template('exercices.html')
 
 @app.route('/carrecss/')
-def carres():
+def carrecss():
     return render_template('carres.html')
   
 @app.route('/chenille/')
