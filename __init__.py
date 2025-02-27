@@ -35,17 +35,13 @@ def chenille():
 def cards():
     return render_template('vallet.html')
 
-@app.route('/actualite/')
-def actualite():
-    return render_template('actualite.html')
+
 
 @app.route('/maison/')
 def maison():
     return render_template('Exemple_Base_SVG.html')
 
-@app.route('/act/')
-def act():
-    return render_template('act.html')
+
   
 @app.route('/exercice_base1/')
 def exercices1():
