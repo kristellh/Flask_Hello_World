@@ -17,7 +17,7 @@ def hello_world():
            <p>Pour accéder à la page maison <a href='./maison/'>ici</a></p>
            <p>Pour accéder à la page vallet <a href='./vallet/'>ici</a></p>
           <p>Pour accéder à la page chenille <a href='./chenille/'>ici</a></p> 
-           <p>Pour accéder à la page carre <a href='./carre/'>ici</a></p>"""
+           """
   
 @app.route('/exercices/')
 def exercices():
