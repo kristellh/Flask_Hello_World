@@ -25,7 +25,7 @@ def exercices():
 
 @app.route('/carre/')
 def carress():
-    return render_template('carre.html')
+    return render_template('carres.html')
   
 @app.route('/chenille/')
 def chenille():
