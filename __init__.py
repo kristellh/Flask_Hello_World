@@ -23,9 +23,7 @@ def hello_world():
 def exercices():
     return render_template('exercices.html')
 
-@app.route('/carre/')
-def carre1():
-    return render_template('carre.html')
+
   
 @app.route('/chenille/')
 def chenille():
