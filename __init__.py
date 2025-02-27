@@ -29,7 +29,7 @@ def actualite():
 
 @app.route('/maison/')
 def maison():
-    return render_template('Exemple_Base_SVG.html.')
+    return render_template('Exemple_Base_SVG.html')
 
 @app.route('/act/')
 def act():
