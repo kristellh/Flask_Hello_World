@@ -13,7 +13,6 @@ def hello_world():
             <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
             <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>
             <p>Pour accéder à la page formulaire <a href='./formulaire/'>ici</a></p>
-            <p>Pour accéder à la page TP1 <a href='./TP1/'>ici</a></p>
            <p>Pour accéder à la page maison <a href='./maison/'>ici</a></p>
            <p>Pour accéder à la page vallet <a href='./vallet/'>ici</a></p>
           <p>Pour accéder à la page chenille <a href='./chenille/'>ici</a></p> 
@@ -58,10 +57,6 @@ def exercices3():
 @app.route('/formulaire/')
 def formulaire():
     return render_template('formulaire.html')
-
-@app.route('/TP1/')
-def tp1():
-    return render_template('TP1.html')
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
