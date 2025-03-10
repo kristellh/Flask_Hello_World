@@ -24,6 +24,20 @@ function controler(){
 		}
 		else{
 			document.getElementById('images1').style.display="None";}
+
+		if(document.getElementById('image2').checked){
+		
+	document.getElementById('images2').style.display="block";
+		}
+		else{
+			document.getElementById('images2').style.display="None";}
+
+		if(document.getElementById('image3').checked){
+		
+	document.getElementById('images3').style.display="block";
+		}
+		else{
+			document.getElementById('images3').style.display="None";}
 }
 
 	
@@ -50,14 +64,18 @@ function controler(){
 <button onclick="afficher()">Afficher</button>	
 	
 	<hr/>
+	</br>
 <div class="images1">
 	<img src="{{ url_for('static', filename='french-connection.png') }}">
 </div>
+	</br>
 	<div class="images2">
 	<img src="{{ url_for('static', filename='french-connection.png') }}">
 </div>
+	</br>
 	<div class="images3">
 	<img src="{{ url_for('static', filename='french-connection.png') }}">
 </div>
+	</br>
 </body>
 </html>
