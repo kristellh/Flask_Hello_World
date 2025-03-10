@@ -7,14 +7,14 @@ function afficher(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
-	k=0	
+		
 	for (j=0; j<saisie ; j++){
-	k=k+1	
-        for (i=0; i<saisie - k ; i++){
+        for (i=0; i<saisie-j ; i++){
                 resultat += "*"; 
         }
                 resultat += "</br>";
         }
+
 	
 	document.getElementById('result').innerHTML = resultat;
 
@@ -24,7 +24,7 @@ function afficher(){
 
 </head>
 <body>
-<h1>Les étoiles </h1>
+<h1>Les étoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <button onclick="afficher()">Afficher</button>
 <div id="result"></div>
