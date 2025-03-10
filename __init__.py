@@ -16,7 +16,8 @@ def hello_world():
            <p>Pour accéder à la page maison <a href='./maison/'>ici</a></p>
            <p>Pour accéder à la page vallet <a href='./vallet/'>ici</a></p>
           <p>Pour accéder à la page chenille <a href='./chenille/'>ici</a></p> 
-          <p>Pour accéder à la page carres <a href='./carres/'>ici</a></p>"""
+          <p>Pour accéder à la page carres <a href='./carres/'>ici</a></p>
+           <p>Pour accéder à la page carres <a href='./etoiles/'>ici</a></p>"""
   
 @app.route('/exercices/')
 def exercices():
@@ -29,6 +30,10 @@ def carres():
 @app.route('/chenille/')
 def chenille():
     return render_template('chenille.html')
+
+@app.route('/etoiles/')
+def etoiles():
+    return render_template('Carre_Etoiles.html')
 
 @app.route('/vallet/')
 def cards():
