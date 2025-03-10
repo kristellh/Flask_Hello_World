@@ -12,8 +12,6 @@ def hello_world():
            <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>"""
   
 
- 
-
 @app.route('/etoiles/')
 def etoiles():
     return render_template('Carre_Etoiles.html')
