@@ -7,10 +7,10 @@ function afficher(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
-		
+	k=0	
 	for (j=0; j<saisie ; j++){
-		
-        for (i=0; i< i+j ; i++){
+	k=k+1	
+        for (i=0; i<saisie - k ; i++){
                 resultat += "*"; 
         }
                 resultat += "</br>";
