@@ -9,14 +9,17 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2>
-           <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>"""
+           <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>
+           <p>Pour accéder à la page image <a href='./images/'>ici</a></p>"""
   
 
 @app.route('/etoiles/')
 def etoiles():
     return render_template('Carre_Etoiles.html')
 
-
+@app.route('/images/')
+def images():
+    return render_template('images.html')
 
     
 if __name__ == "__main__":
