@@ -17,7 +17,14 @@ function controler(){
 		}
 	else{alert("Bouton option NON coché");}		
 }
-
+	function afficher(){
+		if(document.getElementById('Control').checked){
+		
+	document.getElementById('image').style.display="Block";
+		}
+		else{
+			document.getElementById('image').style.display="None";}
+}
 
 	
 
@@ -36,9 +43,11 @@ function controler(){
 <p>Option<input type="checkbox" id="Control"></p>
 <button onclick="controler()">Check</button>
 	<hr/>
-<p>image1<input type="checkbox"></p>
-<p>image2<input type="checkbox"></p>
-<p>image3<input type="checkbox"></p>
+<p id="image"><input type="checkbox"> image1 </p>
+<p id="image"><input type="checkbox"> image2 </p>
+<p id="image"><input type="checkbox"> image3 </p>
+
+<button onclick="afficher()">Afficher</button>	
 
 
 </body>
