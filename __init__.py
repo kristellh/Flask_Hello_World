@@ -9,23 +9,14 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2><p>Pour accéder à vos exerices cliquez <a href='./exercices/'>Ici</a></p>
-            <p>Pour accéder à la page exercice liste <a href='./exercice_base1/'>Ici</a></p>
-            <p>Pour accéder à la page exercice 2 <a href='./exercice_base2/'>Ici</a></p>
-            <p>Pour accéder à la page exercice 3 <a href='./exercice_base3/'>ici</a></p>
-            <p>Pour accéder à la page formulaire <a href='./formulaire/'>ici</a></p>
            <p>Pour accéder à la page maison <a href='./maison/'>ici</a></p>
            <p>Pour accéder à la page vallet <a href='./vallet/'>ici</a></p>
-          <p>Pour accéder à la page chenille <a href='./chenille/'>ici</a></p> 
-          <p>Pour accéder à la page carres <a href='./carres/'>ici</a></p>
+          <p>Pour accéder à la page chenille <a href='./chenille/'>ici</a></p>
            <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>"""
   
 @app.route('/exercices/')
 def exercices():
     return render_template('exercices.html')
-
-@app.route('/carres/')
-def carres():
-    return render_template('carres.html')
   
 @app.route('/chenille/')
 def chenille():
@@ -45,23 +36,12 @@ def cards():
 def maison():
     return render_template('Exemple_Base_SVG.html')
 
-
-  
-@app.route('/exercice_base1/')
-def exercices1():
-    return render_template('exercice_base1.html')
-
-@app.route('/exercice_base2/')
-def exercices2():
-    return render_template('Exercices_HTML.html')
   
 @app.route('/exercice_base3/')
 def exercices3():
     return render_template('exercices_base3.html')
 
-@app.route('/formulaire/')
-def formulaire():
-    return render_template('formulaire.html')
+
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
