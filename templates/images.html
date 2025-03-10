@@ -17,29 +17,29 @@ function controler(){
 		}
 	else{alert("Bouton option NON coché");}		
 }
-	function afficher(){
+	function afficherimage(){
 
 		
 		if(document.getElementById('image1').checked){
 		
-	document.getElementById(images1).style.display="block";
+	document.getElementById('img1').style.display="block";
 		}
 		else{
-			document.getElementById(images1).style.display="none";}
+			document.getElementById('img1').style.display="none";}
 
 		if(document.getElementById('image2').checked){
 		
-	document.getElementById(images2).style.display="block";
+	document.getElementById('img2').style.display="block";
 		}
 		else{
-			document.getElementById(images2).style.display="none";}
+			document.getElementById('img2').style.display="none";}
 
 		if(document.getElementById('image3').checked){
 		
-	document.getElementById(images3).style.display="block";
+	document.getElementById('img3').style.display="block";
 		}
 		else{
-			document.getElementById(images3).style.display="none";}
+			document.getElementById('img3').style.display="none";}
 }
 
 	
@@ -63,20 +63,20 @@ function controler(){
 <p id="image2"><input type="checkbox"> image 2 </p>
 <p id="image3"><input type="checkbox"> image 3 </p>
 
-<button onclick="afficher()">Afficher</button>	
+<button onclick="afficherimage()">Afficher</button>	
 	
 	<hr/>
 	</br>
 <div>
-	<img id="images1" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
+	<img id="img1" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
 
 	</br>
 	
-	<img id="images2" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
+	<img id="img2" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
 
 	</br>
 	
-	<img id="images3" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
+	<img id="img3" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
 </div>
 	
 </body>
