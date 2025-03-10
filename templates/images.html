@@ -19,29 +19,27 @@ function controler(){
 }
 	function afficher(){
 
-		document.getElementById(images1).style.display="None";
-		document.getElementById(images2).style.display="None";
-		document.getElementById(images3).style.display="None";
+		
 		if(document.getElementById('image1').checked){
 		
-	document.getElementById(images1).style.display="Block";
+	document.getElementById(images1).style.display="block";
 		}
 		else{
-			document.getElementById(images1).style.display="None";}
+			document.getElementById(images1).style.display="none";}
 
 		if(document.getElementById('image2').checked){
 		
-	document.getElementById(images2).style.display="Block";
+	document.getElementById(images2).style.display="block";
 		}
 		else{
-			document.getElementById(images2).style.display="None";}
+			document.getElementById(images2).style.display="none";}
 
 		if(document.getElementById('image3').checked){
 		
-	document.getElementById(images3).style.display="Block";
+	document.getElementById(images3).style.display="block";
 		}
 		else{
-			document.getElementById(images3).style.display="None";}
+			document.getElementById(images3).style.display="none";}
 }
 
 	
@@ -69,17 +67,17 @@ function controler(){
 	
 	<hr/>
 	</br>
-<div class="images1">
-	<img src="{{ url_for('static', filename='french-connection.png') }}">
-</div>
+<div>
+	<img id="images1" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
+
 	</br>
-	<div class="images2">
-	<img src="{{ url_for('static', filename='french-connection.png') }}">
-</div>
+	
+	<img id="images2" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
+
 	</br>
-	<div class="images3">
-	<img src="{{ url_for('static', filename='french-connection.png') }}">
+	
+	<img id="images3" src="{{ url_for('static', filename='french-connection.png') }}"style="display:none;width: 60px;" alt="">
 </div>
-	</br>
+	
 </body>
 </html>
