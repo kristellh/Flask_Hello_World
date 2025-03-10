@@ -59,9 +59,12 @@ function controler(){
 <p>Option<input type="checkbox" id="Control"></p>
 <button onclick="controler()">Check</button>
 	<hr/>
-<p id="image1"><input type="checkbox"> image 1 </p>
-<p id="image2"><input type="checkbox"> image 2 </p>
-<p id="image3"><input type="checkbox"> image 3 </p>
+	<div>
+<div>
+			<input type="checkbox" id="image1">Image 1
+			<input type="checkbox" id="image2">Image 2
+			<input type="checkbox" id="image3">Image 3
+		</div>
 
 <button onclick="afficherimage()">Afficher</button>	
 	
@@ -78,6 +81,6 @@ function controler(){
 	
 	<img id="img3" src="{{ url_for('static', filename='Im3.png') }}"style="display:none;width: 60px;" alt="">
 </div>
-	
+</div>	
 </body>
 </html>
