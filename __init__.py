@@ -10,12 +10,16 @@ app = Flask(__name__)
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2>
            <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>
-           <p>Pour accéder à la page image <a href='./images/'>ici</a></p>"""
-  
+           <p>Pour accéder à la page image <a href='./images/'>ici</a></p>
+  <p>Pour accéder à la page image <a href='./jeu_des/'>ici</a></p>"""
 
 @app.route('/etoiles/')
 def etoiles():
     return render_template('Carre_Etoiles.html')
+
+@app.route('/jeu_des/')
+def jeu_des():
+    return render_template('Jeu_Des_Base.html')
 
 @app.route('/images/')
 def images():
