@@ -11,7 +11,7 @@ def hello_world():
     return """<h2>Bonjour tout le monde !</h2>
            <p>Pour accéder à la page etoiles <a href='./etoiles/'>ici</a></p>
            <p>Pour accéder à la page image <a href='./images/'>ici</a></p>
-  <p>Pour accéder à la page image <a href='./jeu_des/'>ici</a></p>"""
+  <p>Pour accéder à la page jeu <a href='./jeu_des/'>ici</a></p>"""
 
 @app.route('/etoiles/')
 def etoiles():
