@@ -31,6 +31,7 @@
           for (let itemRed of liste_red) {
                 if (liste_blue.includes(itemRed)) {  
                     alert("Perdu");
+                    document.getElementById("gain").innerText = gain;
                     gain = 0; 
                     reset(); 
                     return; 
@@ -62,6 +63,7 @@
             liste_red = [];
             liste_blue = [];
             gain = 0;
+            document.getElementById("gain").innerText = gain;
             i = 0;
 
          
