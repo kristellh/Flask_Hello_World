@@ -8,39 +8,9 @@ function fct2(id){
 
 function lancer(){
 		var Val = Math.floor((Math.random() * 6)+1);
-        document.getElementById('Br1').style.display = '';
-		document.getElementById('Br2').style.display = '';
-		document.getElementById('Br3').style.display = '';
-		document.getElementById('Br4').style.display = '';
-		document.getElementById('Br5').style.display = '';
-		document.getElementById('Br6').style.display = '';
+        
 	
-	switch(Val){
-        case 1 :
-                    alert("le barillet 1")
-                    break;
-
-        case 2 :
-                  alert("le barillet 2")
-                    break;
-        case 3 :
-                    alert("le barillet 3")
-                    break;
-                    
-        case 4 :
-                     alert("le barillet 4");
-                   
-                    break;
-                    
-       case 5 :
-                    alert("le barillet 5")
-                   
-                    break;
-                    
-      case 6 :
-                     alert("le barillet 6")
-                    break;
-        }
+	
         if(document.getElementById("Br"+Val).style.fill=="red"){
 alert("Perdu");}
 
