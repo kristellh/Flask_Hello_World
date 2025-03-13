@@ -53,7 +53,7 @@
             }
 
             alert("Votre gain actuel est : " + gain + "€");
-
+               document.getElementById("gain").innerText = gain;
            
             
         }
@@ -73,7 +73,8 @@
 </head>
 <body>
     <h1>Roulette Russe</h1>
-
+    
+        <p>Gains: <span id="gain">0</span>€</p>
     <svg width="200" height="200" style="background-color: antiquewhite">
         <circle cx="100" cy="100" r="95" stroke="black" stroke-width="3" fill="none" />
         <circle onclick="fct2(1)" id="Br1" cx="100" cy="40" r="25" stroke="black" stroke-width="3" fill="grey" />
