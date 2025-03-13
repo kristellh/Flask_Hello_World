@@ -1,50 +1,91 @@
-</html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<script>
-function fct2(id){
-	document.getElementById("Br"+id).style.fill="red";
+    <meta charset="UTF-8">
+    <title>Roulette Russe</title>
+    <script>
+        let i = 0;
+        let liste_red = [];
+        let liste_blue = [];
+        let gain = 0;  
 
-}
-
-function lancer(){
-		var Val = Math.floor((Math.random() * 6)+1);
         
-	
-	
-        if(document.getElementById("Br"+Val).style.fill=="red"){
-alert("Perdu");}
+        function fct2(id) {
+            if (i < 3) {  
+                document.getElementById("Br" + id).style.fill = "red"; 
+                liste_red.push(id);
+                i++;  
+            } else {
+                alert("Que 3 maximum ");
+            }
+        }
 
-else{
-alert("Gagné");
-}
+       
+        function lancer() {
+            let Val = Math.floor((Math.random() * 6) + 1);  
+            
+            document.getElementById("Br" + Val).style.fill = "blue";
+            liste_blue.push(Val);  
 
-	
-      }	
-		
+ 
+          for (let itemRed of liste_red) {
+                if (liste_blue.includes(itemRed)) {  
+                    alert("Perdu");
+                    gain = 0; 
+                    reset(); 
+                    return; 
+                }
+            }
 
+      
+            alert("Bravo, vous avez gagné!");
+            
+           
+            if (i === 1) {
+                gain += 10000;  
+                alert("Vous avez gagné 10.000€ !");
+            } else if (i === 2) {
+                gain += 100000;  
+                alert("Vous avez gagné 100.000€ !");
+            } else if (i === 3) {
+                gain += 1000000;  
+                alert("Vous avez gagné 1.000.000€ !");
+            }
 
+            alert("Votre gain actuel est : " + gain + "€");
 
-</script>
+           
+            
+        }
+
+        function reset() {
+            liste_red = [];
+            liste_blue = [];
+            gain = 0;
+            i = 0;
+
+         
+            for (let j = 1; j <= 6; j++) {
+                document.getElementById("Br" + j).style.fill = "grey"; 
+            }
+        }
+    </script>
 </head>
 <body>
-	<h1>Roulette Russe</h1>
+    <h1>Roulette Russe</h1>
 
-	<svg width=200 height=200 style="background-color:antiquewhite">
-	<circle cx="100" cy="100" r="95" stroke="black" stroke-width="3" fill="none" />
-	<circle onclick="fct2(1)" id="Br1" cx="100" cy="40" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle onclick="fct2(2)" id="Br2" cx="150" cy="70" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle onclick="fct2(6)" id="Br6" cx="50" cy="70" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle onclick="fct2(5)" id="Br5" cx="50" cy="130" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle onclick="fct2(3)" id="Br3" cx="150" cy="130" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle onclick="fct2(4)" id="Br4" cx="100" cy="160" r="25" stroke="black" stroke-width="3" fill="gray" />
-	<circle cx="100" cy="100" r="10" stroke="black" stroke-width="3" fill="black" />
-	</svg>	
-	
-	<button onclick="lancer()">Jouer</button>	
-	
+    <svg width="200" height="200" style="background-color: antiquewhite">
+        <circle cx="100" cy="100" r="95" stroke="black" stroke-width="3" fill="none" />
+        <circle onclick="fct2(1)" id="Br1" cx="100" cy="40" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle onclick="fct2(2)" id="Br2" cx="150" cy="70" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle onclick="fct2(6)" id="Br6" cx="50" cy="70" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle onclick="fct2(5)" id="Br5" cx="50" cy="130" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle onclick="fct2(3)" id="Br3" cx="150" cy="130" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle onclick="fct2(4)" id="Br4" cx="100" cy="160" r="25" stroke="black" stroke-width="3" fill="grey" />
+        <circle cx="100" cy="100" r="10" stroke="black" stroke-width="3" fill="black" />
+    </svg>
+
+    <button onclick="lancer()">Jouer</button>  
+    <button onclick="reset()">Redémarrer</button>
 </body>
 </html>
-
-
-		
-		
